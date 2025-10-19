@@ -1,0 +1,38 @@
+services:
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_DATABASE: looo_db
+      MYSQL_ROOT_PASSWORD: password   # ✅ root 비밀번호만 남김
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: looo_django_backend
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - DEBUG=True
+      - DB_ENGINE=mysql
+      - DB_HOST=db
+      - DB_NAME=looo_db
+      - DB_USER=root
+      - DB_PASSWORD=password
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db_data:
