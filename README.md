@@ -153,42 +153,6 @@ http://localhost:8000/api/posts/
 docker compose exec backend python manage.py test
 ```
 
-🆚 Free 🩵 vs Pro 🧡 Edition
-기능 구분	LOOO Django StarterKit 🩵 (Free)	LOOO DevKit 🧡 (Pro)
-⚙️ Django 버전	Django 5 + DRF 3.x	Django 5 + DRF 3.x + JWT 인증
-🧩 앱 구조	단일 앱(core) 예시	다중 앱 구조 + User/Auth 모듈
-💾 데이터베이스	SQLite + MySQL 지원	PostgreSQL + MySQL + 환경 자동분기
-🐳 Docker 구성	Backend + DB 단일 Compose	Nginx + Backend + DB + Static 멀티 컨테이너
-🧰 API 예시	/api/posts/ CRUD	게시물 + 사용자 + 알림 API
-🔒 인증/보안	기본 Django Auth (선택적)	JWT 토큰 기반 Auth / CORS 세팅
-📘 문서화	README + 실행 가이드	Swagger UI + Postman Collection 자동 생성
-🧠 테스트 코드	미포함 (필요시 작성)	pytest + coverage 기본 지원
-🧱 배포 구성	개발용 Docker 환경	CI/CD (GitHub Actions + Render or AWS)
-🎨 UI/UX	API 전용 백엔드	React + Tailwind 샘플 대시보드
-💡 대상 사용자	학생 / 초급 개발자 / 학습용	스타트업 / 프로덕트 팀 / 실서비스용
-💰 라이선스	MIT License (무료)	LOOO Pro License (상용 가능)
-🧩 Pro Edition 추가 기능 예정
-
-🔑 JWT + Custom User Model 기본 세팅
-
-📄 Swagger / Postman 자동 문서화
-
-☁️ S3 또는 Cloudinary 정적 파일 저장
-
-🧱 Docker 멀티스테이지 빌드
-
-⚙️ GitHub Actions CI/CD 파이프라인
-
-💡 Free로 시작하고 Pro로 확장하세요.
-한 번 배운 구조로, 실서비스까지 연결되는 LOOO 스타터킷.
-
-## 🪶 **License**
-
-MIT License © 2025 **LOOO**
-
-> 자유롭게 사용, 수정, 배포 가능하나 출처 표시는 유지해주세요.
-> 
-
 ---
 
 📘 **LOOO — 한 번 배우면, 계속 써먹을 수 있는 풀스택 스타터킷.**
