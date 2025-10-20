@@ -53,7 +53,6 @@ LOOO-DJANGO/
 │   │   ├── serializers.py
 │   │   ├── views.py
 │   │   ├── urls.py
-│   │   ├── tests.py
 │   │   ├── __init__.py
 │   │   └── migrations/
 │   │        └─ __init__.py
