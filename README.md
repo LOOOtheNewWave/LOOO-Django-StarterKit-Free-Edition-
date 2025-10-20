@@ -29,7 +29,6 @@
 | ⚙️ Django 5 + DRF 3.x | RESTful API 기본 구조 |
 | 🗄️ MySQL (Docker) | 실서버용 DB 환경 |
 | 💾 SQLite | 빠른 로컬 테스트용 DB |
-| 🔐 JWT Authentication | (선택) 인증 예시 포함 |
 | 🧰 CRUD API (Post 예시) | `/api/posts/` 기본 엔드포인트 제공 |
 | 🐳 Docker Compose | `up --build` 한 줄 실행 구조 |
 
